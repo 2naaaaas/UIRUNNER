@@ -1,0 +1,129 @@
+name: iur_eats_delivery
+description: IUR EatsDelivery - Peer-to-peer campus meal delivery platform
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.13.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State Management
+  flutter_bloc: ^8.1.3
+  bloc: ^8.1.2
+  equatable: ^2.0.5
+
+  # Firebase
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.15.3
+  cloud_firestore: ^4.13.6
+  firebase_storage: ^11.5.6
+  firebase_messaging: ^14.7.10
+  firebase_analytics: ^10.7.4
+  firebase_crashlytics: ^3.4.9
+  firebase_performance: ^0.9.3+5
+  firebase_functions: ^4.3.2
+
+  # UI & Navigation
+  go_router: ^12.1.3
+  flutter_screenutil: ^5.9.0
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  lottie: ^2.7.0
+  flutter_svg: ^2.0.9
+  flutter_staggered_animations: ^1.1.1
+
+  # Maps & Location
+  google_maps_flutter: ^2.5.3
+  geolocator: ^10.1.0
+  geocoding: ^2.1.1
+  location: ^5.0.3
+
+  # Network & HTTP
+  dio: ^5.4.0
+  connectivity_plus: ^5.0.2
+  internet_connection_checker: ^1.0.0+1
+
+  # Local Storage
+  shared_preferences: ^2.2.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  secure_storage: ^9.0.0
+
+  # Payments
+  stripe_flutter: ^10.1.1
+  pay: ^1.1.2
+
+  # Utilities
+  intl: ^0.19.0
+  uuid: ^4.2.1
+  path_provider: ^2.1.2
+  permission_handler: ^11.1.0
+  image_picker: ^1.0.4
+  url_launcher: ^6.2.2
+  device_info_plus: ^9.1.1
+  package_info_plus: ^4.2.0
+  flutter_local_notifications: ^16.3.2
+  vibration: ^1.8.4
+
+  # Biometric Authentication
+  local_auth: ^2.1.7
+
+  # QR Code
+  qr_flutter: ^4.1.0
+  qr_code_scanner: ^1.0.1
+
+  # Charts & Analytics
+  fl_chart: ^0.66.0
+
+  # Social Features
+  share_plus: ^7.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+  
+  # Testing
+  bloc_test: ^9.1.5
+  mockito: ^5.4.4
+  build_runner: ^2.4.7
+  json_annotation: ^4.8.1
+  json_serializable: ^6.7.1
+  hive_generator: ^2.0.1
+
+  # Code Generation
+  injectable: ^2.3.2
+  get_it: ^7.6.4
+
+flutter:
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/animations/
+    - assets/fonts/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
